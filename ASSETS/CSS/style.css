@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.global{
+    max-width: 1000px;
+    min-height: 100vh;
+    margin:0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#entete, #pied{ /* FOND */
+    background-color: rgb(26, 48, 80);
+}
+
+h1{ /* Enlever l'espace entre les sections*/
+    margin:0;
+    padding:0;
+}
+
+/* /////////////////// NAVIGATION /////////////////*/
+.boite__nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(26, 48, 80);
+    display: flex;
+    align-items: center;
+}
+
+.hero__nav{ /* Conteneur nav */
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid rgb(81, 130, 136);
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    color: rgba(51, 54, 94, 0.8);
+    max-width: 388px;
+    transform: translateX(2000px);
+    transition: transform 1s;
+}
+
+nav a{
+    color: rgb(81, 130, 136);
+    text-decoration: none;
+    padding: 2px 8px 2px 8px;
+}
+
+nav a:hover{
+    color: rgb(96, 187, 199);
+}
+
+#chk-bouton{
+    display: none;
+  }
+  
+  #chk-bouton:checked + nav{ /* nav précédé par un checkbox checked */
+      transform: translateX(0px);
+      transition: transform .55s;
+  }
+
+/* /////////////////////HERO///////////////////// */
+
+header .global{ /* Conteneur de la page Hero au complet */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__conteneur{ /* Boite de la page principale (WRAP) */
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 95VH;
+    
+}
+/* /////////// HERO TEXTE GAUCHE //////////// */
+.hero__txtgauche h1{ /* Les voiliers */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(96, 187, 199);
+    font-size: 3.8rem;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.hero__txtgauche{ /* Boite de la section */
+    line-height: 1.6;
+}
+
+.hero__txtgauche p, .hero__txtgauche h4{ /* Texte sous le H1 */
+    max-width: 550px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(96, 187, 199);
+    padding-left: 10px;
+}
+
+.hero__txtgauche p{ /* Spécifiquement la description du travail */
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.hero__h4box{ /* Boite contenant les H4 du hero__txtgauche */
+    margin-top: 30px;
+}
+
+.hero__h4{ /* Spécifiquement les H4 */
+    margin-top: 10px;
+}
+
+.hero__logo{
+    max-width: 450px;
+    flex: 1;
+}
+
+.hero__logo img{ /* Logo TP2 */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+
+/*/////////////////////// HERO - FOOTER /////////////////////////*/
+
+.hero__pied{
+    text-align: center;
+    padding: 10px;
+}
+
+/* -----------------SECTIONS------------------- */
+/* Les titres de chaque section */
+h3{
+    padding-top: 120px;
+}
+
+h3, p{
+    padding-left: 10px;
+}
+/* /////////////////////////////////////////////// */
+#section-1{
+    background-color: rgb(207, 240, 248);
+}
+
+#section-2{
+    background-color:rgb(154, 195, 206);
+}
+
+#section-3{
+    background-color:rgb(122, 164, 175);
+}
+
+#section-4{
+    background-color:rgb(92, 131, 141);
+}
+
+.retour{ /* Lien retour en haut */
+    color: white;
+}
+
+/* ----------------------------- Footer ------------------ */
+.pied{
+    text-align: center;
+}
+
+.pied h1{
+    padding-top: 120px;
+}
